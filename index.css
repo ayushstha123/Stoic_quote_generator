@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Recursive&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #6190ab;
+}
+
+.quote-box {
+  background-color: #93d7ff;
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
+  font-family: Recursive;
+}
+.quote-box h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.quote-box h2::after {
+  content: "";
+  width: 300px;
+  height: 5px;
+  border-radius: 3px;
+  background-color: #000000;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.quote-box blockquote {
+  font-size: 24px;
+  min-height: 110px;
+}
+.quote-box blockquote::after, .quote-box blockquote::before {
+  content: '"';
+  font-weight: bold;
+}
+.quote-box span {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+  float: right;
+  position: relative;
+}
+.quote-box span::before {
+  content: "";
+  width: 15px;
+  height: 2px;
+  background: #000000;
+  position: absolute;
+  top: 50%;
+  left: -30%;
+}
+.quote-box .buttons {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.quote-box .buttons button {
+  background-color: #3064ff;
+  border-radius: 25px;
+  margin: 5px;
+  color: rgb(255, 255, 255);
+  width: 150px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+  border: none;
+  font-weight: 500;
+  font-family: Recursive;
+}
+.quote-box .buttons button img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  justify-content: center;
+}
+.quote-box .buttons button:hover {
+  background: #264ec7;
+  color: white;
+  transition: 0.2s all ease-in;
+}
+.quote-box .buttons button:nth-child(2) {
+  background: rgb(255, 255, 255);
+  color: black;
+}
+.quote-box .buttons button:nth-child(2):hover {
+  background-color: #6f6fff;
+  transition: 0.2s all ease-in;
+  color: white;
+}/*# sourceMappingURL=index.css.map */
